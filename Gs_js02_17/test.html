@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style check sheet</title>
+  <script src="jquery-2.1.3.min.js"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<header>
+<h1>Style Management</h1>
+</header>
+
+<main style="display: none;">
+  <section>
+    <h1>スタイル測定</h1>
+
+
+    <div class="form_contact">
+      <form>
+        <dl id="form" class="form_inner_c">
+          <dt class="form_title_c
+          ">測定日</dt>
+          <dd><input type="text" id="date" placeholder="YYYY/MM/DD"></dd>
+          <dt class="form_title_c
+          ">体重（kg）</dt>
+          <dd><input type="text" id="weight" placeholder="**.*" autocomplete="off"></dd>
+          <dt class="form_title_c
+          ">体脂肪（％）</dt>
+          <dd><input type="text" id="bodyfat" placeholder="**.*"></dd>
+          <dt class="form_title_c
+          ">二の腕周り（cm）</dt>
+          <dd><input type="text" id="upperarm" placeholder="**.*"></dd>
+          <dt class="form_title_c
+          ">もも周り（cm）</dt>
+          <dd><input type="text" id="thigh" placeholder="**.*"></dd>
+        </dlss=>        
+      </form>
+    </div>
+<!-- 
+    <form action="" id=form1>
+      <p>
+        体重（kg）<input type="text" id="weight" size="6" id="weight">
+      </p>
+      <p>
+        スリーサイズ（cm）
+        <input type="text" id="bust" size="6" id="bl">
+        <input type="text" id="waist" size="6" id="wl">
+        <input type="text" id="hip" size="6" id="hl">
+      </p>
+      <p>
+        二の腕周り（cm）<input type="text" id="upperarm" size="6" id="weight">
+      </p>
+      <p>
+        もも周り（cm）<input type="text" id="thigh" size="6" id="weight">
+      </p>
+    </form> -->
+
+    <h2>生活習慣チェック</h2>
+    <form action="" id=form2>
+      <ul>
+        <li>一日三食、炭水化物を食べられた。
+          <input type="radio" id="carb" value="5">5
+          <input type="radio" id="carb" value="4">4
+          <input type="radio" id="carb" value="3">3
+          <input type="radio" id="carb" value="2">2
+          <input type="radio" id="carb" value="1">1
+        </li>
+        <li>一日8時間以上の睡眠できた。
+          <input type="radio" id="sleep" value="5">5
+          <input type="radio" id="sleep" value="4">4
+          <input type="radio" id="sleep" value="3">3
+          <input type="radio" id="sleep" value="2">2
+          <input type="radio" id="sleep" value="1">1
+        </li>
+        <li>就寝前3時間以内に食事はしなかった。
+          <input type="radio" id="nofood" value="5">5
+          <input type="radio" id="nofood" value="4">4
+          <input type="radio" id="nofood" value="3">3
+          <input type="radio" id="nofood" value="2">2
+          <input type="radio" id="nofood" value="1">1
+        </li>
+        <li>バランスの良い食事（5色、揚げ物&白砂糖控える）をとれた。
+          <input type="radio" id="gmeal" value="5">5
+          <input type="radio" id="gmeal" value="4">4
+          <input type="radio" id="gmeal" value="3">3
+          <input type="radio" id="gmeal" value="2">2
+          <input type="radio" id="gmeal" value="1">1
+        </li>
+      </ul>      
+    </form>
+
+    <h3>Memo</h3>
+  
+      <textarea id="memo"></textarea>
+  
+    <ul id=click>
+        <li id="save">Save</li>
+        <li id="clear">Clear</li>
+    </ul>
+  </section>
+
+  <section>
+    <div id=output>
+      graph space
+    </div>
+    
+    <table id="table">
+      <!-- ここに追加データが挿入される -->
+      <tr id="tr">
+        <th class="d0">日付</th>
+        <th class="d1">体重</th>
+        <th class="d2">体脂肪</th>
+        <th class="d3">二の腕回り</th>
+        <th class="d4">もも回り</th>
+        <th class="d5">life P</th>
+        <th class="d6">Memo</th>
+      </tr>
+      <!-- <tr class="savedData" id="tr">
+        <td id="savedDate"></td>
+        <td id="savedW"></td>
+        <td id="savedB"></td>
+        <td id="savedU"></td>
+        <td id="savedT"></td>
+        <td id="savedL"></td>
+        <td id="savedM"></td>
+      </tr> -->
+    
+    </table>
+  </section>
+
+</main>
+
+<footer><small>Style</small></footer>
+
+
+
+<script src="test.js"></script>
+
+</body>
+</html>
